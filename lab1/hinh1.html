@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bài 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  border-left:3px solid gray;
+  border-top:3px solid gray;
+  border-bottom:2px solid black;
+  border-right:2px solid black;
+}
+
+/* Style the header */
+header {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: #c9c5c5;
+  padding: 15px;
+  text-align: left;
+  font-size: 35px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float:left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #c5c563e8;
+  border: 1px solid black;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin :5px 0px 0px 5px;
+  
+}
+
+article {
+  border: 1px solid black;
+  float: right;
+  width: 890px;
+  background-color: white;
+  height: 300px; /* only for demonstration, should be removed */
+}
+article p{
+  margin-left:5px;
+  margin-top:7px;
+}
+/* Clear floats after the columns */
+section{
+
+  margin:5px;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  border: 1px solid black;
+  margin: 3px;
+  background-color: #676262e6;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+  <h2>PROCESS LAYOUT EXAMPLE</h2>
+  </header>
+
+<section>
+  <nav>
+    <ul>
+      <li><b>Main menu</b></li>
+      <li>Link one</li>
+      <li>Link two</li>
+      <li>Link three</li>
+      <li>Link four</li>
+    </ul>
+  </nav>
+  
+  <article>
+    <p>This is an example layout using the tables</p>
+  </article>
+</section>
+
+<footer>
+  <p>www.Example of layout using tables.com</p>
+</footer>
+
+</body>
+</html>
+

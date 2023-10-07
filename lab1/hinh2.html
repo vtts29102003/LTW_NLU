@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bài 2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        height:300px;
+        width:800px;
+        display:grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows:  1fr 1fr 5fr 2fr;
+        grid-template-areas: 
+        "nav nav"
+        "bar bar"
+        "index section"
+        "footer footer";
+    }
+    .flex{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .setborder{
+        border:1px solid gray;
+    }
+    .container_header{
+        grid-area: nav;
+        font-size: 40px;
+    }
+    .container_bar{
+        grid-area:bar;
+        font-size: 40px;
+        border-top:none  !important;
+    }
+    .container_index{
+        grid-area :index;
+        font-size: 40px;
+        border-top:none  !important;
+    }
+    .container_section{
+        grid-area:section;
+        font-size: 40px;
+        border-top:none  !important;
+        border-left:none  !important;
+    }
+    .container_footer{
+        grid-area:footer;
+        font-size: 40px;
+        border-top:none  !important;
+    }
+</style>
+</head>
+<body class="flex">
+    <div class="container">
+        <div class="container_header setborder flex"><b>Header Section</b></div>
+        <div class="container_bar setborder flex"><b>Navigation Bar</b></div>
+        <div class="container_index setborder flex"><b>Index</b></div>
+        <div class="container_section setborder flex"><b>Content Section</b></div>
+        <div class="container_footer setborder flex"><b>Footer Section</b></div>
+    </div>
+</body>
+</html>

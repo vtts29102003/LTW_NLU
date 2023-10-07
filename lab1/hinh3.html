@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bài 2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        width:900px;
+        text-align: center;
+        color:white;
+    }
+    .container_header{
+        background-color: #c4996c;
+        height:120px;
+    }
+    .container_image{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color:#a8a9ad;
+        height:400px;
+        margin-top:15px;
+    }
+    .container_body{
+        color:black;
+    }
+    .container_footer{
+        background-color: #115d7f;
+        height:120px;
+        margin-top:15px;
+    }
+    .grid_container{
+        display:grid;
+        grid-template-columns:180px 180px 180px;
+        grid-template-rows: 220px 220px ;
+         justify-content: center;
+         column-gap: 20px;
+        row-gap: 20px;
+    }
+    .container_body-item{
+        border:1px solid #151515;
+        background-color:#a8a9ad;
+        color:#ffffff;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container_body-item h3{
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+ 
+</style>
+</head>
+<body>
+    <div class ="container">
+        <div class = "container_header">
+           <h1>Header section</h1> 
+           <h2>900px - 120px</h2>
+        </div>
+        <div class = "container_image">
+            <h1>Company Image</h1>
+            <h2>900px - 400px</h2>
+            <h3>designed by - gdatamart.com</h3>
+        </div>
+        <div class = "container_body">
+            <h1>Our Services</h1>
+          <div class="grid_container">
+            <div class="container_body-item">
+               <h2>services</h2>
+                <h3>width 180px</h3>
+                <h3>height 220px</h3>
+            </div>
+            <div class="container_body-item">
+                <h2>services</h2>
+            </div>
+            <div class="container_body-item">
+                <h2>services</h2>
+            </div>
+            <div class="container_body-item"></div>
+            <div class="container_body-item"></div>
+            <div class="container_body-item"></div>
+          </div>
+        </div>
+        <div class="container_footer">
+            <h1>Footer section</h1>
+            <h2>900px - 120px</h2>
+        </div>
+    </div>
+</body>

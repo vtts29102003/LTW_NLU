@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-top:0px;
+}
+.noneline{
+   text-decoration: none;
+}
+.white_text{
+    color:#fff;
+}
+.background_orange{
+    background-color: #f77825;
+}
+#section_text_2 {
+    background-color:#f3f3f3;
+}
+#section_text_2 > .container{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.btn_header{
+    padding:10px 15px;
+}
+.navbar >.containerss{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    display: flex;
+} 
+#section_slider{
+    background-color: hsl(0deg 0% 93.33%);
+    padding: 60px 0px;
+}
+.carousel-inner{
+    display: flex;
+    width: 300%; /* Chiều rộng của container là 3 lần chiều rộng của mỗi item */
+}
+.item {
+    flex: 0 0 33.333%; /* Mỗi item chiếm 1/3 chiều rộng của container */
+}
+.top_padding{
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+    width:900px;
+    margin:auto;
+}
+.btn_join{
+    padding:10px;
+    background-color:#ff8833;
+    color:white;
+}
+.bold_text{
+    font-weight: bold;
+}
+.text_normal{
+    color:#bdb9b5;
+}
+.none_list{
+    list-style: none;
+}
+.box{
+    width:900px !important;
+    display:flex;
+    justify-content: space-around;
+    margin-top:12px;
+    height:305px;
+    align-items: center;
+  
+}
+.box >.item_box{
+    border: 1px solid #e1e1e1;
+    padding:25px 50px;
+    text-align: center;
+    background-color:white;
+    height:325px;
+    margin-top:55px;
+}
+.box >.item_box >.pix_builder_bg{
+    height: 285px;
+    justify-content: space-around;
+    flex-direction: column;
+    display: flex;
+
+}
+.desize{
+    padding:0px;
+}
+.btn_buy13{
+    background-color:#2dc0e8;
+    color:white;
+    padding:10px;
+    border-radius:4px;
+}
+.btn_buy2{
+    background-color:#ff8833;
+    color:white;
+    padding:12px;
+    border-radius:4px;
+}
+.text_13{
+    color:#2dc0e9;
+    font-size:35px;
+}
+.text_2{
+    color:#f77925;
+    font-size:35px;
+}
+.pix_builder_bg1{
+    background-color:#f3f3f3;
+    height:390px;
+}
+.footer{
+    background-color: #191919;
+    height:500px;
+    display:flex;
+    align-items: center;
+}
+.flex{
+    margin:auto;
+    height:400px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    /* width: 100px; */
+    padding: 30px 20px 10px 20px ;
+    flex-direction: column;
+    background-color: #151515;
+    width:400px;
+}
+.flex >.subtext_style{
+    color:#595654;
+}
+#contact_form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:166px;
+    width:100%;
+}
+.form_item{
+    padding:8px 5px;
+}
+.form_item1{
+    font-weight: 1px;
+    background-color:#2d86ee;
+    border:none;
+    border-radius: 4px;
+    padding:8px 5px;
+}
+.big_font{
+    font-size:20px;
+}
+.finally_footer{
+    justify-content: space-around;
+    display:flex;
+    height:50px;
+    align-items: center;
+     background-color:#151515; 
+}
+.sub_flex{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.sub_flex > ul{
+    display:flex;
+    list-style: none;
+    margin:0px;
+    padding:0px;
+    margin-left:8px;
+    justify-content: space-around;
+    width:70px;
+    color:white;
+}
+.text_blue{
+    color: #2b69c6;
+    font-weight: bold;
+}
+.container_nav{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding-top:15px;
+    padding-bottom:10px;
+}
+.rights_st{
+    color:#57555a;
+}
+.nav_icon{
+display:flex;
+justify-content: space-around;
+width:125px;
+margin-left:-300px;
+}
+.nav_text{
+display:flex;
+justify-content: space-around;
+width:280px;
+padding-left:0px;
+
+}
+.nav_text > li >a{
+    color:#a6a8a6;
+    font-weight: bold;
+}
+.container_picture{
+    margin-top:70px;
+}
+.cycle_picture{
+    border-radius:115px;
+}
+hr{ 
+  
+    height: 7px !important;
+    background-color: #2d86ee !important;
+    margin:auto !important;
+   margin-top:20px !important;
+    width:66px;
+    
+}
+.sad{
+    height:370px;
+} 
+.carousel-inner {
+ position: relative;
+} 
+.image-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+ background: black; /* Màu của layer trung gian (mờ) */
+ opacity: 0.3;
+z-index: 1; /* Đảm bảo nằm trên ảnh */
+}
+.carousel-caption{
+            position: absolute;
+     z-index:2;
+    text-align: left !important;
+ }
+ .carousel-indicators{
+    z-index:3 !important;
+ }
+     
+        
+   
+        
+    
+    
+
+
+
+
+
+
+
