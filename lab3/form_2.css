@@ -1,0 +1,91 @@
+*{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+}
+.form_contact{
+    height:500px;
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    "contact contact"
+    "name name"
+    "email phone"
+    "need need"
+    "message message"
+    "submit submit";
+    column-gap: 10px;
+    row-gap: 10px;
+    margin:45px;
+}
+.form_contact_contact{
+   grid-area: contact;
+  text-align: center;
+  
+}
+.form_contact_name{
+    grid-area:name;
+position:relative;    
+}
+.form_contact_email{
+    grid-area:email;
+position:relative;
+}
+.form_contact_phone{
+grid-area:phone;
+position:relative;
+}
+.form_contact_need{
+grid-area:need;
+position:relative;
+}
+.form_contact_message{
+grid-area:message;
+position:relative;
+}
+.form_contact_submit{
+grid-area:submit;
+position:relative;
+}
+.form_contact label{
+    position: absolute;
+    font-size:11px;
+    margin-left:15px;
+    margin-top:15px;
+    font-weight: bold;
+    color:#757575;
+}
+.form_contact input,#need,#message {
+    padding:30px 15px 12px 15px;
+    width:100%;
+    background-color:#f7f7f7;
+    border:none;    
+    height:100%;
+    border-radius:6px;
+}
+#need::placeholder{
+    font-size:20px;
+}
+#need option{
+font-size:20px;
+}
+.form_contact .form_contact_submit input{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding-top:12px;
+}
+.form_contact #message{
+    background-color:white;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.form_contact_submit{
+    position:relative;
+}
+.form_contact_submit i{
+    color:white;
+    position:absolute;
+    top:32%;
+    left:54%;
+}
